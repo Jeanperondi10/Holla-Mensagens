@@ -1,0 +1,191 @@
+body{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0px;
+	background: lightblue;
+}
+p,h1,h2,h2,h4,h5{
+	font-family: helvetica;
+	margin: 0;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: white;
+	z-index: 1;
+}
+.logo{
+	position: fixed;
+	width: 10%;
+	margin: 10vw 45% 0.5vw 45%;
+}
+.btn-entrar{
+	position: absolute;
+	bottom: 10vw;
+	height: 5vw;
+	width: 10%;
+	border:none;
+	border-radius: 5%;
+	background: #1E90FF;
+	color: white;
+	margin: 0px 45% 0px 45%;
+}
+.loading{
+	position: absolute;
+	bottom: 10vw;
+	width: 10%;
+	margin: 0px 45% 0px 45%;
+	display: none;
+}
+section{
+	position: absolute;
+	top:6vw;
+	bottom: 0;
+	width: 60%;
+	margin: 0px 20% 0px 20%;
+	background: white;	
+	z-index: 0; 
+}
+nav{
+	margin-top: 1vw;
+	height: 5vw;
+	overflow: hidden;
+	width: 100%;
+}
+input{
+	height: 3vw;
+	margin: 1vw 0px 1vw 1%;
+	width: 92%;
+	border:none;
+	display: inline-block;
+	float: left;
+	font-size: 1vw;
+	text-align: center;
+	border-radius: 5%;
+	background: pink;
+}
+.btn{
+	width: 5%;
+	height: 3vw;
+	margin: 1vw 1% 1vw 1%;
+	float: right;
+	background: lightgreen;
+	border:none;
+	border-radius: 100%;
+}
+.btns{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 2vw;
+	overflow: hidden;
+}
+.btn-curtir{
+	height: 80%;
+	padding: 0px 0.2vw 0px 0.2vw;
+	display: inline-block;
+	float: left;
+	border-radius: 100%;
+}
+ul{
+	width: 100%;
+	padding: 0;
+	list-style-type: none
+}
+li{
+	position: relative;
+	width: 94%;
+	margin: 0.25vw 2% 0.25% 2%;
+	background: rgba(0,0,0,0.5);
+	overflow: hidden;
+}
+.top-text{
+	width: 100%;
+	height: 4vw;
+	background: rgba(255,255,255,0.2);
+}
+.text-nome{
+	font-size: 2vw;
+	float: left;
+}
+.text-data{
+	font-size: 1.5vw;
+	padding-top: 0.25vw;
+	float: right;
+}
+.text-msg{
+	font-size: 1.5vw;
+	padding: 0.1vw 10% 0.1vw 10%;
+	display: block
+}
+
+@media only screen and (max-width: 800px) {
+	.btn-entrar{
+		position: absolute;
+		bottom: 10vw;
+		width: 90%;
+		margin: 0px 5% 0px 5%;
+		float: 7vw;
+		height: 10vw;
+		color: white;
+	}
+	.logo{
+		position: fixed;
+		width: 30%;
+		margin: 0.5vw 35% 0.5vw 35%;
+	}
+	section{
+		width: 100%;
+		margin: 0px;
+	}
+	nav{
+		height: 14vw;
+		overflow: hidden;
+		width: 100%;
+	}
+	input{
+		height: 12vw;
+		margin: 1vw 0px 1vw 1%;
+		width: 85%;
+		font-size: 4vw;
+	}
+	.btn{
+		width: 12%;
+		height: 12vw;
+	}
+	.btns{
+		position: static;
+		width: 100%;
+		height: 7vw;
+		background: rgba(255,255,255,0.2);
+	}
+	.btn-curtir{
+		height: 90%;
+		padding: 0px 21% 0px 21%;
+	}
+	li{
+		width: 98%;
+		margin: 0.25vw 1% 0.25vw 1%;
+	}
+	.top-text{
+		height: 7vw;
+	}
+	.text-nome{
+		font-size: 6vw;
+	}
+	.text-data{
+		font-size: 5vw;
+		padding-top: 1vw;
+	}
+	.text-msg{
+		font-size: 5vw;
+		padding: 1vw 2% 1vw 2%;
+		display: block
+	}
+}

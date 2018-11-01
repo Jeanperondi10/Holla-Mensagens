@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Holla-Mensagens</title>
+	<meta charset="utf-8"/>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+	<link href="style/css.css" rel="stylesheet"/>
+	<script src="script/vue.js"></script>
+	<script src="script/js.js"></script>
+</head>
+<body>
+	<div id="app">
+		<header id="header-pag">
+			<img class="logo" id="img-logo" src="img/logo.png">
+			<button class="btn-entrar" id="entrar" onclick="entrar()">Entrar</button>
+			<img class="loading" id="img-loading" src="img/loading.gif">
+		</header>
+		<section>
+			<nav>
+				<input type="text" id="msg" maxlength="100" placeholder="No que você está pensando?" v-model="texto_tweet">
+				<button class="btn" v-on:click="addTweet()"></button>
+			</nav>
+			<ul>
+				<li v-for="tweet in tweets">
+					<div class="top-text"><h1 class="text-nome">{{ tweet.nome }}</h1><p class="text-data">{{tweet.data}}</p></div>
+					<p class="text-msg">{{tweet.mensagem}}</p>
+					<div class="btns">
+						<img class="btn-curtir" src="img/curtir.png" v-on:click="curtir()">
+						<img class="btn-curtir" src="img/curtir.png" v-on:click="descurtir()">
+					</div>
+				</li>
+			</ul>
+		</section>
+	</div>
+
+</body>
+</html>
