@@ -27,14 +27,28 @@ header{
 }
 .btn-entrar{
 	position: absolute;
-	bottom: 10vw;
-	height: 5vw;
+	bottom: 9vw;
+	height: 3vw;
 	width: 10%;
 	border:none;
 	border-radius: 5%;
 	background: #1E90FF;
 	color: white;
 	margin: 0px 45% 0px 45%;
+}
+.btn-entrar:hover{
+	background: black;
+	color: white;
+}
+.input-login{
+	position: absolute;
+	bottom: 15vw;
+	height: 3vw;
+	width: 30%;
+	border:none;
+	border-radius: 3%;
+	background: lightblue;
+	margin: 0px 35% 0px 35%;
 }
 .loading{
 	position: absolute;
@@ -68,7 +82,7 @@ input{
 	font-size: 1vw;
 	text-align: center;
 	border-radius: 5%;
-	background: pink;
+	background: lightblue;
 }
 .btn{
 	width: 5%;
@@ -93,6 +107,7 @@ input{
 	float: left;
 	border-radius: 100%;
 }
+
 ul{
 	width: 100%;
 	padding: 0;
@@ -101,9 +116,10 @@ ul{
 li{
 	position: relative;
 	width: 94%;
-	margin: 0.25vw 2% 0.25% 2%;
+	margin: 1vw 2% 0.5vw 2%;
 	background: rgba(0,0,0,0.5);
 	overflow: hidden;
+	border-radius: 4%;
 }
 .top-text{
 	width: 100%;
@@ -112,28 +128,32 @@ li{
 }
 .text-nome{
 	font-size: 2vw;
+	margin: 1vw 0px 1vw 1%;
 	float: left;
 }
 .text-data{
 	font-size: 1.5vw;
-	padding-top: 0.25vw;
+	margin: 1.25vw 1% 1.25vw 0px;
 	float: right;
 }
 .text-msg{
-	font-size: 1.5vw;
-	padding: 0.1vw 10% 0.1vw 10%;
+	font-size: 2vw;
+	padding: 0.5vw 10% 0.5vw 10%;
 	display: block
 }
 
 @media only screen and (max-width: 800px) {
 	.btn-entrar{
-		position: absolute;
 		bottom: 10vw;
 		width: 90%;
 		margin: 0px 5% 0px 5%;
-		float: 7vw;
 		height: 10vw;
-		color: white;
+	}
+	.input-login{
+		bottom: 25vw;
+		height: 15vw;
+		width: 90%;
+		margin: 0px 5% 0px 5%;
 	}
 	.logo{
 		position: fixed;
@@ -185,7 +205,7 @@ li{
 	}
 	.text-msg{
 		font-size: 5vw;
-		padding: 1vw 2% 1vw 2%;
-		display: block
+		padding: 1vw 1% 1vw 1%;
+		text-align: left;
 	}
 }

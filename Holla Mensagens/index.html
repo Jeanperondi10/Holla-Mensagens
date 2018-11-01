@@ -12,12 +12,13 @@
 	<div id="app">
 		<header id="header-pag">
 			<img class="logo" id="img-logo" src="img/logo.png">
-			<button class="btn-entrar" id="entrar" onclick="entrar()">Entrar</button>
+			<input class="input-login" type="text" id="nome" maxlength="30" placeholder="Diga-nos quem você é!" v-model="entrar_text" v-on:keyup.enter="entrar()">
+			<button class="btn-entrar" id="entrar" v-on:click="entrar()">Entrar</button>
 			<img class="loading" id="img-loading" src="img/loading.gif">
 		</header>
 		<section>
 			<nav>
-				<input type="text" id="msg" maxlength="100" placeholder="No que você está pensando?" v-model="texto_tweet">
+				<input type="text" id="msg" maxlength="100" placeholder="No que você está pensando?" v-model="texto_tweet" v-on:keyup.enter="addTweet()">
 				<button class="btn" v-on:click="addTweet()"></button>
 			</nav>
 			<ul>
