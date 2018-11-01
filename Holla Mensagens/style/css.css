@@ -80,15 +80,15 @@ input{
 	border-radius: 100%;
 }
 .btns{
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	height: 2vw;
+	position: static;
+		width: 100%;
+		height: 3vw;
+		background: rgba(255,255,255,0.2);
 	overflow: hidden;
 }
 .btn-curtir{
-	height: 80%;
-	padding: 0px 0.2vw 0px 0.2vw;
+	height: 60%;
+	padding: 0.5vw 23% 0px 23%;
 	display: inline-block;
 	float: left;
 	border-radius: 100%;

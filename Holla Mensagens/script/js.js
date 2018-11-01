@@ -37,7 +37,7 @@ window.onload = function(){
 
 				this.tweets.push(newTweet);
 			},
-			curtir:function(){
+			curtir:function(num){
 				alert("Você curtiu este item")
 			},
 			descurtir:function(){
